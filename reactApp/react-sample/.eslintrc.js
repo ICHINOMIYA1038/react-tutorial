@@ -16,7 +16,6 @@ module.exports = {
   },
   extends: ["eslint:recommended", "plugin:react/recommended"],
   rules: {
-    "prettier/prettier": ERROR, // prettier拡張
     "no-var": ERROR, // var禁止
     "object-shorthand": [ERROR, "always"], // オブジェクト定義時にショートハンド利用
     "prefer-arrow-callback": ERROR, // コールバックにはアロー関数を利用
@@ -212,7 +211,7 @@ module.exports = {
     "react/jsx-boolean-value": ERROR, // boolのpropsの代入記述を省略
     "react/jsx-filename-extension": [
       ERROR,
-      { extensions: [".ts", ".tsx", ".jsx"] },
+      { extensions: [".ts", ".tsx", ".jsx", ".js"] },
     ],
     "react/jsx-handler-names": WARNING, // イベントハンドラに無名関数を使わない
     "react/prefer-es6-class": [ERROR, "always"], // ES6のクラス記法を使う
